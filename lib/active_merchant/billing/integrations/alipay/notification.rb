@@ -12,6 +12,10 @@ module ActiveMerchant #:nodoc:
             trade_status == "TRADE_FINISHED"
           end
 
+          def success?
+            trade_status == 'TRADE_FINISHED' || trade_status == 'TRADE_SUCCESS'
+          end
+
           def pending?
             trade_status == 'WAIT_BUYER_PAY'
           end
