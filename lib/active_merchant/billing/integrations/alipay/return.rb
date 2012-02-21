@@ -15,6 +15,10 @@ module ActiveMerchant #:nodoc:
             @params["total_fee"]
           end
 
+          def notify_Id
+            @params["notify_id"]
+          end
+
           def initialize(query_string)
             super
           end
