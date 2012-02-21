@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{activemerchant_patch_for_china}
-  s.version = "0.1.6"
+  s.name = "activemerchant_patch_for_china"
+  s.version = "0.1.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Richard Huang"]
-  s.date = %q{2011-02-24}
-  s.description = %q{A rails plugin to add an active_merchant patch for china online payment platform}
-  s.email = %q{flyerhzm@gmail.com}
+  s.date = "2012-02-21"
+  s.description = "A rails plugin to add an active_merchant patch for china online payment platform"
+  s.email = "flyerhzm@gmail.com"
   s.extra_rdoc_files = [
     "README.textile"
   ]
@@ -51,14 +51,10 @@ Gem::Specification.new do |s|
     "test/activemerchant_patch_for_china_test.rb",
     "test/test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/flyerhzm/activemerchant_patch_for_china}
+  s.homepage = "http://github.com/flyerhzm/activemerchant_patch_for_china"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.2}
-  s.summary = %q{A rails plugin to add an active_merchant patch for china online payment platform}
-  s.test_files = [
-    "test/activemerchant_patch_for_china_test.rb",
-    "test/test_helper.rb"
-  ]
+  s.rubygems_version = "1.8.15"
+  s.summary = "A rails plugin to add an active_merchant patch for china online payment platform"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
