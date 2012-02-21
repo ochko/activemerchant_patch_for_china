@@ -18,9 +18,13 @@ module ActiveMerchant #:nodoc:
           def initialize(query_string)
             super
           end
-
+          
           def success?
-            unless verify_sign
+            @params['is_success'] == 'T'
+          end
+
+          def signed
+            unless @params["sign"] && verify_sign
               @message = "Alipay Error: ILLEGAL_SIGN"
               return false
             end
